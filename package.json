@@ -1,0 +1,51 @@
+{
+  "name": "decky-bootnext",
+  "version": "1.0.0",
+  "description": "A Decky plugin for choosing another installed operating system for the next boot.",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "deploy": "pnpm run build && ./scripts/deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsore/decky-bootnext.git"
+  },
+  "keywords": [
+    "decky",
+    "plugin",
+    "uefi",
+    "efibootmgr",
+    "dual-boot",
+    "steam-deck",
+    "deck"
+  ],
+  "author": "Ruben Sørensen <73177332+rsore@users.noreply.github.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/rsore/decky-bootnext/issues"
+  },
+  "homepage": "https://github.com/rsore/decky-bootnext#readme",
+  "devDependencies": {
+    "@decky/rollup": "^1.0.2",
+    "@decky/ui": "^4.12.0",
+    "@rollup/rollup-linux-x64-musl": "^4.62.2",
+    "@types/react": "19.1.1",
+    "@types/react-dom": "19.1.1",
+    "rollup": "^4.62.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@decky/api": "^1.1.3",
+    "react-icons": "^5.7.0",
+    "tslib": "^2.8.1"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "react",
+        "react-dom"
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "BootNext",
+  "author": "Ruben Sørensen",
+  "flags": ["root"],
+  "api_version": 1,
+  "publish": {
+    "tags": ["utility", "boot", "uefi", "root"],
+    "description": "Choose a UEFI entry for the next boot and optionally restart.",
+    "image": "https://raw.githubusercontent.com/rsore/decky-bootnext/refs/heads/main/previews/01-boot-selection.jpg"
+  }
+}

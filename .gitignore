@@ -1,0 +1,4 @@
+.deck.env
+node_modules/
+dist/
+release/
